@@ -14,7 +14,7 @@ if __name__ == "__main__":
 			extension = filename[:-3]
 			try:
 				bot.load_extension(f"✅ | **cogs.{extension}** has been loaded!")
-			except:
+			except Exception as e:
 				exception = f"{type(e), __name__}: {e}"
 				print(f"❌ | {extension.capitalize()}!")
 
