@@ -1,11 +1,8 @@
 import nextcord
 from nextcord.ext import commands
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-bot = commands.Bot(command_prefix=os.getenv("PREFIX), intents=nextcord.Intents.all())
+bot = commands.Bot(command_prefix="?", intents=nextcord.Intents.all())
                                             
 @bot.event
 async def on_ready():
