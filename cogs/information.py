@@ -8,7 +8,7 @@ class Information(commands.Cog):
   #Ping Command
   @commands.command()
   async def ping(self, ctx):
-    await ctx.send("<a:checkmark:934196489935278090> Pong! | Latency: **{round(self.bot.latency * 1000)}**ms!")
+    await ctx.send(f"<a:checkmark:934196489935278090> Pong! | Latency: **{round(self.bot.latency * 1000)}**ms!")
     
 def setup(bot):
   bot.add_cog(Information(bot))
